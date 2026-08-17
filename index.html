@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Name — Software Developer & AI Engineer</title>
+    <meta name="description" content="Software Developer & AI Engineer crafting high-performance web experiences and simple, durable software architectures.">
+
+    <!-- Google Fonts: DM Sans + Instrument Serif + DM Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor elements -->
+    <div id="cur"></div>
+    <div id="cur-r"></div>
+
+    <!-- Noise & Scanline Overlay -->
+    <div id="noise"></div>
+    <div id="scanline"></div>
+
+    <!-- Preloader -->
+    <div id="loader">
+        <div id="ld-ticks" aria-hidden="true">
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+            <div class="ld-t"></div>
+        </div>
+        <div id="ld-name">
+            <span class="scramble-logo">BINS KS</span>
+        </div>
+        <div id="ld-status">Initializing</div>
+        <div id="ld-num">0</div>
+        <div id="ld-prog"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo" data-scramble="BINS KS">BINS KS<span>®</span></a>
+
+        <nav>
+            <a href="#home" data-scramble="intro">intro</a>
+            <a href="#about" data-scramble="about">about</a>
+            <a href="#work" data-scramble="work">work</a>
+            <a href="#contact" data-scramble="contact">contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-contact" data-scramble="let's talk ↗">let's talk ↗</a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+
+<section id="home" class="hero">
+
+    <!-- Small information row -->
+    <div class="hero-meta reveal">
+        <span>PORTFOLIO — 2026</span>
+        <span>SOFTWARE & AI DEVELOPER</span>
+    </div>
+
+
+    <!-- Main Hero -->
+    <div class="hero-main">
+
+        <div class="hero-small reveal-up">
+            <span>HELLO, I'M</span>
+        </div>
+
+        <h1 class="hero-title reveal-up">
+            <span>SOFTWARE</span>
+            <span>DEVELOPER<span class="orange">.</span></span>
+        </h1>
+
+        <div class="hero-intro reveal-up">
+
+            <div class="hero-arrow">
+                ↓
+            </div>
+
+            <p>
+                I create thoughtful digital experiences
+                and build software that is simple,
+                functional and made to last.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom information -->
+    <div class="hero-footer reveal">
+
+        <span>BASED IN INDIA</span>
+
+        <a href="#about" class="scroll-text">
+            SCROLL TO EXPLORE ↓
+        </a>
+
+    </div>
+
+</section>
+
+
+
+        <!-- About Section -->
+<!-- ABOUT SECTION -->
+<section id="about" class="about reveal">
+
+    <!-- Section Header -->
+    <div class="section-label">
+        <span>01</span>
+        <span>ABOUT ME</span>
+    </div>
+
+
+    <!-- About Introduction -->
+    <div class="about-intro reveal-up">
+
+        <p class="about-small">
+            A LITTLE ABOUT ME
+        </p>
+
+        <h2>
+            I turn ideas into
+            <em>digital experiences.</em>
+        </h2>
+
+    </div>
+
+
+    <!-- About Details -->
+    <div class="about-details reveal-up">
+
+        <div class="about-number">
+            01
+        </div>
+
+        <div class="about-text">
+
+            <p class="about-lead">
+                I'm a software developer who enjoys
+                building useful, reliable and visually
+                engaging applications.
+            </p>
+
+            <p>
+                I work across the development process —
+                from understanding an idea and designing
+                the structure to writing clean code and
+                turning it into a working product.
+            </p>
+
+            <p>
+                I'm constantly learning new technologies,
+                experimenting with ideas and looking for
+                better ways to solve problems.
+            </p>
+
+        </div>
+
+        <div class="about-image-wrapper">
+            <div class="about-image">
+                <img src="assets/bins1.jpeg" alt="BINS Profile Image">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- About Stats -->
+    <div class="about-stats reveal-up">
+
+        <div class="stat">
+            <strong>03+</strong>
+            <span>YEARS LEARNING</span>
+        </div>
+
+        <div class="stat">
+            <strong>10+</strong>
+            <span>PROJECTS</span>
+        </div>
+
+        <div class="stat">
+            <strong>∞</strong>
+            <span>THINGS TO BUILD</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- SKILLS SECTION -->
+<section id="skills" class="skills reveal">
+
+    <div class="section-label">
+        <span>02</span>
+        <span>WHAT I WORK WITH</span>
+    </div>
+
+
+    <div class="skills-heading reveal-up">
+
+        <p>TOOLS & TECHNOLOGIES</p>
+
+        <h2>
+            Things I
+            <em>work with.</em>
+        </h2>
+
+    </div>
+
+
+    <!-- Moving Technology Strip (Dual-direction marquee) -->
+    <div class="tech-marquee-wrapper">
+        <div class="tech-marquee marquee-forward">
+            <div class="tech-track">
+                <span>HTML</span> <span>✦</span>
+                <span>CSS</span> <span>✦</span>
+                <span>JAVASCRIPT</span> <span>✦</span>
+                <span>PYTHON</span> <span>✦</span>
+                <span>JAVA</span> <span>✦</span>
+                <span>SQL</span> <span>✦</span>
+                <span>GIT</span> <span>✦</span>
+                <span>GITHUB</span> <span>✦</span>
+                <!-- Duplicate for loop -->
+                <span>HTML</span> <span>✦</span>
+                <span>CSS</span> <span>✦</span>
+                <span>JAVASCRIPT</span> <span>✦</span>
+                <span>PYTHON</span> <span>✦</span>
+                <span>JAVA</span> <span>✦</span>
+                <span>SQL</span> <span>✦</span>
+                <span>GIT</span> <span>✦</span>
+                <span>GITHUB</span> <span>✦</span>
+            </div>
+        </div>
+        
+        <div class="tech-marquee marquee-reverse">
+            <div class="tech-track">
+                <span>REACT</span> <span>✦</span>
+                <span>NEXT.JS</span> <span>✦</span>
+                <span>NODE.JS</span> <span>✦</span>
+                <span>EXPRESS</span> <span>✦</span>
+                <span>MONGODB</span> <span>✦</span>
+                <span>POSTGRESQL</span> <span>✦</span>
+                <span>TAILWIND</span> <span>✦</span>
+                <span>REST APIS</span> <span>✦</span>
+                <!-- Duplicate for loop -->
+                <span>REACT</span> <span>✦</span>
+                <span>NEXT.JS</span> <span>✦</span>
+                <span>NODE.JS</span> <span>✦</span>
+                <span>EXPRESS</span> <span>✦</span>
+                <span>MONGODB</span> <span>✦</span>
+                <span>POSTGRESQL</span> <span>✦</span>
+                <span>TAILWIND</span> <span>✦</span>
+                <span>REST APIS</span> <span>✦</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Skills Categories -->
+    <div class="skill-list reveal-up">
+
+        <div class="skill-row">
+
+            <span class="skill-index">01</span>
+
+            <h3 data-scramble="FRONTEND">FRONTEND</h3>
+
+            <p>
+                HTML / CSS / JavaScript / Responsive Design /
+                UI Development
+            </p>
+
+            <span class="skill-arrow">↗</span>
+
+        </div>
+
+
+        <div class="skill-row">
+
+            <span class="skill-index">02</span>
+
+            <h3 data-scramble="BACKEND">BACKEND</h3>
+
+            <p>
+                Python / Java / APIs / Server-side Development /
+                Database Integration
+            </p>
+
+            <span class="skill-arrow">↗</span>
+
+        </div>
+
+
+        <div class="skill-row">
+
+            <span class="skill-index">03</span>
+
+            <h3 data-scramble="DATABASE">DATABASE</h3>
+
+            <p>
+                SQL / MySQL / Database Design /
+                Data Management
+            </p>
+
+            <span class="skill-arrow">↗</span>
+
+        </div>
+
+
+        <div class="skill-row">
+
+            <span class="skill-index">04</span>
+
+            <h3 data-scramble="TOOLS">TOOLS</h3>
+
+            <p>
+                Git / GitHub / VS Code /
+                Developer Tools
+            </p>
+
+            <span class="skill-arrow">↗</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- WORK SECTION -->
+<section id="work" class="work reveal">
+
+    <div class="section-label">
+        <span>03</span>
+        <span>SELECTED WORKS</span>
+    </div>
+
+    <div class="work-heading reveal-up">
+        <h2>
+            Selected
+            <em>projects.</em>
+        </h2>
+    </div>
+
+    <div class="projects">
+
+        <article class="project reveal-up">
+            <a href="https://github.com/yourusername/prompt-analyzer" target="_blank" class="project-card">
+                <div class="project-image">
+                    <span class="project-num">01 / 03</span>
+                    <div class="project-visual proj-gradient-1"></div>
+                    <span class="project-hover-label">VISIT PROJECT ↗</span>
+                </div>
+            </a>
+            <div class="project-info">
+                <div class="project-meta">
+                    <h3>AI Prompt Analyzer</h3>
+                    <p>Next.js / TypeScript / OpenAI</p>
+                </div>
+                <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">A web tool analyzing and scoring ChatGPT prompts for effectiveness and clarity with real-time feedback.</p>
+        </article>
+
+        <article class="project reveal-up">
+            <a href="https://github.com/yourusername/f1-terminal" target="_blank" class="project-card">
+                <div class="project-image">
+                    <span class="project-num">02 / 03</span>
+                    <div class="project-visual proj-gradient-2"></div>
+                    <span class="project-hover-label">VISIT PROJECT ↗</span>
+                </div>
+            </a>
+            <div class="project-info">
+                <div class="project-meta">
+                    <h3>F1 Telemetry Data Terminal</h3>
+                    <p>Python / FastF1 / Pandas</p>
+                </div>
+                <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">A high-octane CLI and visual toolkit extracting, analyzing, and plotting motorsport race telemetries.</p>
+        </article>
+
+        <article class="project reveal-up project-wide">
+            <a href="https://github.com/yourusername/musicfx" target="_blank" class="project-card">
+                <div class="project-image">
+                    <span class="project-num">03 / 03</span>
+                    <div class="project-visual proj-gradient-3"></div>
+                    <span class="project-hover-label">VISIT PROJECT ↗</span>
+                </div>
+            </a>
+            <div class="project-info">
+                <div class="project-meta">
+                    <h3>Music Band Management System</h3>
+                    <p>JavaFX / OOP / Serialization</p>
+                </div>
+                <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">A comprehensive desktop application designed to streamline scheduling, logistics, budgets, and sound equipment maintenance.</p>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact reveal">
+
+    <div class="section-label">
+        <span>04</span>
+        <span>GET IN TOUCH</span>
+    </div>
+
+
+    <div class="contact-main">
+
+        <div class="contact-status">
+            <span class="status-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
+        </div>
+
+
+        <p class="contact-small">
+            HAVE AN IDEA, PROJECT OR OPPORTUNITY?
+        </p>
+
+
+        <h2>
+            Let's build
+            <em>something.</em>
+        </h2>
+
+
+        <a
+            href="mailto:binsks777@gmail.com"
+            class="contact-email"
+        >
+            binsks777@gmail.com
+            <span>↗</span>
+        </a>
+
+    </div>
+
+
+    <!-- Social Links -->
+    <div class="contact-links">
+
+        <a
+            href="https://github.com/binsks"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>GITHUB</span>
+            <span>↗</span>
+        </a>
+
+
+        <a
+            href="https://www.linkedin.com/in/binsks-00300a376"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>LINKEDIN</span>
+            <span>↗</span>
+        </a>
+
+
+        <a
+            href="mailto:binsks777@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>EMAIL</span>
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-top">
+            <p>© 2026 BINS KS</p>
+
+            <div class="social-links">
+                <a href="https://github.com/binsks" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/binsks-00300a376/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Designed & developed by me.</p>
+            <p><a href="#home">Back to top ↑</a></p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
